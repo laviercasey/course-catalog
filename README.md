@@ -3,7 +3,7 @@
 Pixel-perfect вёрстка и «оживление» блока-каталога по макету Figma: живой поиск по названию и
 фильтрация по категориям. Чистый стек без библиотек и фреймворков.
 
-- **Демо (Vercel):** _ссылка будет добавлена после деплоя_
+- **Демо (Vercel):** https://card-catalog-umber.vercel.app
 - **Репозиторий:** https://github.com/laviercasey/course-catalog
 - **Макет:** [Figma — Test Task](https://www.figma.com/design/iuXLXifXgv4ZCzad0KeYKr/Test-Task)
 
