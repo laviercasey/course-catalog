@@ -1,0 +1,21 @@
+.hero {
+  text-align: center;
+}
+
+.hero__eyebrow {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--c-heading);
+  margin-bottom: 8px;
+}
+
+.hero__title {
+  font-size: clamp(28px, 2.4vw, 46px);
+  font-weight: 900;
+  line-height: clamp(36px, 3.1vw, 60px);
+  letter-spacing: 0;
+  color: var(--c-heading);
+}

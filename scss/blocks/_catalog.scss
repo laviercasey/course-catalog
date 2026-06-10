@@ -1,0 +1,24 @@
+.catalog {
+  position: relative;
+  overflow: hidden;
+  padding-top: clamp(24px, 2.3vw, 44px);
+  padding-bottom: clamp(40px, 4.5vw, 86px);
+  background-color: var(--c-white);
+}
+
+.catalog__container {
+  width: min(var(--container-max), 100% - 2rem);
+  margin-inline: auto;
+}
+
+.catalog__hero {
+  margin-bottom: clamp(40px, 4.4vw, 85px);
+}
+
+.catalog__toolbar {
+  margin-bottom: clamp(32px, 3.1vw, 60px);
+}
+
+.catalog__grid {
+  margin-bottom: clamp(40px, 4.2vw, 80px);
+}

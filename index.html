@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Online courses catalog with live search and category filtering." />
+  <title>Our online courses</title>
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <section class="catalog">
+
+    <img
+      class="decor decor--dots"
+      src="assets/svg/dots.svg"
+      alt=""
+      aria-hidden="true"
+      width="162"
+      height="176"
+      decoding="async"
+    />
+    <img
+      class="decor decor--squares"
+      src="assets/svg/shapes-squares.svg"
+      alt=""
+      aria-hidden="true"
+      width="85"
+      height="85"
+      decoding="async"
+    />
+    <img
+      class="decor decor--circles"
+      src="assets/svg/shapes-circles.svg"
+      alt=""
+      aria-hidden="true"
+      width="83"
+      height="44"
+      decoding="async"
+    />
+    <img
+      class="decor decor--cursor"
+      src="assets/img/cursor.png"
+      alt=""
+      aria-hidden="true"
+      width="22"
+      height="21"
+      decoding="async"
+    />
+
+    <div class="catalog__container">
+
+      <header class="hero catalog__hero">
+        <p class="hero__eyebrow">Enjoy your studying!</p>
+        <h1 class="hero__title">Our online courses</h1>
+      </header>
+
+      <div class="toolbar catalog__toolbar">
+        <div class="tabs" data-tabs role="toolbar" aria-label="Filter courses by category"></div>
+
+        <div class="search toolbar__search">
+          <label for="catalog-search" class="visually-hidden">Search courses</label>
+          <input
+            id="catalog-search"
+            data-search
+            class="search__input"
+            type="search"
+            placeholder="Search course..."
+            autocomplete="off"
+          />
+          <span class="search__icon" aria-hidden="true">
+            <svg class="search__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip-search)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25016 2.16634C4.44272 2.16634 2.16683 4.44223 2.16683 7.24967C2.16683 10.0571 4.44272 12.333 7.25016 12.333C8.65276 12.333 9.92161 11.7658 10.842 10.8467C11.7642 9.92589 12.3335 8.6549 12.3335 7.24967C12.3335 4.44223 10.0576 2.16634 7.25016 2.16634ZM0.833496 7.24967C0.833496 3.70585 3.70634 0.833008 7.25016 0.833008C10.794 0.833008 13.6668 3.70585 13.6668 7.24967C13.6668 8.78248 13.1287 10.1905 12.2321 11.2939L14.9711 14.0278C15.2317 14.2879 15.2321 14.7101 14.972 14.9706C14.7119 15.2312 14.2898 15.2316 14.0292 14.9715L11.2888 12.2362C10.1863 13.13 8.78039 13.6663 7.25016 13.6663C3.70634 13.6663 0.833496 10.7935 0.833496 7.24967Z" fill="#9A9CA5"/>
+              </g>
+              <defs>
+                <clipPath id="clip-search">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <p data-status class="visually-hidden" role="status" aria-live="polite"></p>
+
+      <div class="grid catalog__grid" data-grid role="list" aria-label="Course cards">
+        <p class="grid__empty" hidden>No courses found.</p>
+      </div>
+
+      <div class="load-more catalog__load-more" data-load-more>
+        <button class="load-more__btn" data-load-more-btn type="button">
+          <span class="load-more__icon" aria-hidden="true">
+            <svg class="load-more__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.09961 2C2.65189 2 3.09961 2.44772 3.09961 3V7.43632C4.75764 4.20928 8.11959 2 11.9996 2C16.3552 2 20.058 4.78413 21.4303 8.66675C21.6144 9.18747 21.3414 9.75879 20.8207 9.94284C20.3 10.1269 19.7287 9.85396 19.5446 9.33325C18.4459 6.22472 15.4813 4 11.9996 4C9.03957 4 6.45326 5.60799 5.06955 8H8.09957C8.65186 8 9.09957 8.44772 9.09957 9C9.09957 9.55228 8.65186 10 8.09957 10H2.09961C1.54732 10 1.09961 9.55228 1.09961 9V3C1.09961 2.44772 1.54732 2 2.09961 2Z" fill="#424551"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17664 14.0572C3.69736 13.8731 4.26868 14.146 4.45273 14.6668C5.55144 17.7753 8.51608 20 11.9978 20C14.9578 20 17.5441 18.392 18.9278 16H15.8978C15.3455 16 14.8978 15.5523 14.8978 15C14.8978 14.4477 15.3455 14 15.8978 14H21.8977C22.45 14 22.8977 14.4477 22.8977 15V21C22.8977 21.5523 22.45 22 21.8977 22C21.3455 22 20.8977 21.5523 20.8977 21V16.5637C19.2397 19.7907 15.8778 22 11.9978 22C7.64215 22 3.93936 19.2159 2.56705 15.3332C2.383 14.8125 2.65593 14.2412 3.17664 14.0572Z" fill="#424551"/>
+            </svg>
+          </span>
+          <span class="load-more__text">Load more</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

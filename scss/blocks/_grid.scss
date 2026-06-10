@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+  gap: var(--grid-gap);
+}
+
+.grid__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--c-text-soft);
+}

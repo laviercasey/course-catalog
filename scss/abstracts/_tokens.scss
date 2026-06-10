@@ -1,0 +1,35 @@
+:root {
+  --c-heading: #1e212c;
+  --c-text-muted: #787a80;
+  --c-text-soft: #9a9ca5;
+  --c-price: #ff4242;
+  --c-accent: #ff3f3a;
+  --c-card-border: #e5e8ed;
+  --c-input-border: #d7dadd;
+  --c-loadmore: #424551;
+  --c-decor: #ffcf2d;
+  --c-white: #ffffff;
+
+  --badge-design: #f52f6e;
+  --badge-marketing: #03cea4;
+  --badge-management: #5a87fc;
+  --badge-hr: #f89828;
+  --badge-development: #7772f1;
+
+  --shadow-default:
+    0 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+  --shadow-hover:
+    0 4px 4px -4px rgba(30, 33, 44, 0.05),
+    0 12px 10px -6px rgba(154, 156, 165, 0.08),
+    0 30px 24px -10px rgba(154, 156, 165, 0.10),
+    0 80px 80px -20px rgba(154, 156, 165, 0.16);
+
+  --radius: 4px;
+  --container-max: 1230px;
+  --grid-gap: 30px;
+  --card-img-ratio: 390 / 240;
+}

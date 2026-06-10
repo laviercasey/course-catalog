@@ -1,0 +1,158 @@
+﻿export const courses = [
+  {
+    id: 1,
+    category: 'Marketing',
+    title: 'The Ultimate Google Ads Training Course',
+    price: '$100',
+    author: 'by Jerome Bell',
+    image: 'assets/img/google-ads.jpg',
+  },
+  {
+    id: 2,
+    category: 'Management',
+    title: 'Product Management Fundamentals',
+    price: '$480',
+    author: 'by Marvin McKinney',
+    image: 'assets/img/product-management.jpg',
+  },
+  {
+    id: 3,
+    category: 'HR & Recruiting',
+    title: 'HR Management and Analytics',
+    price: '$200',
+    author: 'by Leslie Alexander Li',
+    image: 'assets/img/hr-management.jpg',
+  },
+  {
+    id: 4,
+    category: 'Marketing',
+    title: 'Brand Management & PR Communications',
+    price: '$530',
+    author: 'by Kristin Watson',
+    image: 'assets/img/brand-management.jpg',
+  },
+  {
+    id: 5,
+    category: 'Design',
+    title: 'Graphic Design Basic',
+    price: '$500',
+    author: 'by Guy Hawkins',
+    image: 'assets/img/graphic-design-basic.jpg',
+  },
+  {
+    id: 6,
+    category: 'Management',
+    title: 'Business Development Management',
+    price: '$400',
+    author: 'by Dianne Russell',
+    image: 'assets/img/business-development.jpg',
+  },
+  {
+    id: 7,
+    category: 'Development',
+    title: 'Highload Software Architecture',
+    price: '$600',
+    author: 'by Brooklyn Simmons',
+    image: 'assets/img/highload-architecture.jpg',
+  },
+  {
+    id: 8,
+    category: 'HR & Recruiting',
+    title: 'Human Resources – Selection and Recruitment',
+    price: '$150',
+    author: 'by Kathryn Murphy',
+    image: 'assets/img/human-resources.jpg',
+  },
+  {
+    id: 9,
+    category: 'Design',
+    title: 'User Experience. Human-centered Design',
+    price: '$240',
+    author: 'by Cody Fisher',
+    image: 'assets/img/user-experience.jpg',
+  },
+  {
+    id: 10,
+    category: 'Marketing',
+    title: 'Digital Marketing Strategy',
+    price: '$320',
+    author: 'by Cameron Williamson',
+    image: 'assets/img/google-ads.jpg',
+  },
+  {
+    id: 11,
+    category: 'Marketing',
+    title: 'Social Media Marketing Essentials',
+    price: '$180',
+    author: 'by Jane Cooper',
+    image: 'assets/img/brand-management.jpg',
+  },
+  {
+    id: 12,
+    category: 'Management',
+    title: 'Agile Project Management',
+    price: '$350',
+    author: 'by Wade Warren',
+    image: 'assets/img/business-development.jpg',
+  },
+  {
+    id: 13,
+    category: 'HR & Recruiting',
+    title: 'Talent Acquisition Essentials',
+    price: '$210',
+    author: 'by Esther Howard',
+    image: 'assets/img/human-resources.jpg',
+  },
+  {
+    id: 14,
+    category: 'HR & Recruiting',
+    title: 'People Operations Fundamentals',
+    price: '$190',
+    author: 'by Robert Fox',
+    image: 'assets/img/hr-management.jpg',
+  },
+  {
+    id: 15,
+    category: 'HR & Recruiting',
+    title: 'Modern Recruitment Techniques',
+    price: '$260',
+    author: 'by Devon Lane',
+    image: 'assets/img/human-resources.jpg',
+  },
+  {
+    id: 16,
+    category: 'Development',
+    title: 'Full-Stack Web Development',
+    price: '$560',
+    author: 'by Jacob Jones',
+    image: 'assets/img/highload-architecture.jpg',
+  },
+  {
+    id: 17,
+    category: 'Development',
+    title: 'Scalable Backend Systems',
+    price: '$640',
+    author: 'by Floyd Miles',
+    image: 'assets/img/highload-architecture.jpg',
+  },
+];
+
+const CATEGORY_DEFS = [
+  { id: 'all',         label: 'All',            category: null },
+  { id: 'marketing',   label: 'Marketing',      category: 'Marketing' },
+  { id: 'management',  label: 'Management',     category: 'Management' },
+  { id: 'hr',          label: 'HR & Recruiting', category: 'HR & Recruiting' },
+  { id: 'design',      label: 'Design',         category: 'Design' },
+  { id: 'development', label: 'Development',     category: 'Development' },
+];
+
+const countFor = (categoryName) =>
+  categoryName === null
+    ? courses.length
+    : courses.filter((course) => course.category === categoryName).length;
+
+export const categories = CATEGORY_DEFS.map(({ id, label, category }) => ({
+  id,
+  label,
+  count: countFor(category),
+}));
